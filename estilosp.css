@@ -1,0 +1,498 @@
+
+/* efeito dentro do corpo, definido fonte e tamanho da margin em 0. */
+body {
+margin: 0;
+font-family: Trebuchet MS;
+background:#f7f7f7;
+}
+/* denindo o header com tamanho 100 %, e a cor de fundo Azul, header fixo */
+header{
+	width:100%;
+	height: 50px;
+	min-height: 50px;
+    position: fixed;
+    top: 0;
+  
+	background-color:rgb(0, 0, 0);
+}
+/* cancelando o checkbox, pois o mesmo foi usado na função do icon, assim deixei invisivel ao usuario */
+#btn-menu{
+	display: none;
+}
+/* definindo o icon , com tamanho de altura, largura e espaçamento */
+header label{
+	display: none;
+	width:40px;
+	height:20px;
+	padding:10px;
+}
+/* para quando passar o mouse */
+header label:hover{
+	cursor:pointer;
+}
+#menu ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	margin-left: 70%;
+}
+/*Definindo proporção de crescimento de cada elemento, se tiver flat-grow*/
+#menu li{
+	margin: 15px 0px 0px 15px; 
+}
+
+/*efeito de mouse, quando passar o mouse muda de cor*/
+#menu li:hover{
+	text-shadow: 0 0 40px #00f6ff;
+	transform:scale(1.2);
+}
+
+
+#menu li a{
+	padding: 15px 10px;
+	color:#fff;
+	text-decoration:none;
+	font-size:18px;
+}
+
+.wrapper{
+	width: 96%;
+	max-width: 1200px;
+	margin : 0 auto;
+	padding : 0px 2%;
+}
+.wrapper a{
+	color:#bbb;
+
+	}
+
+
+ 
+.corpo {
+  height: 650px;
+ /* min-height: 100%;*/
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background:url(Imagem/solucao.png);
+}
+ 
+.corpo div {
+  padding: 40px;
+  border: 4px solid #2c3e50;
+  font-size:45px;
+  color:#2c3e50;
+}
+	.theus{
+  height: 600px;
+  justify-content: center;
+  background-color: #349EED;
+}
+
+
+.Titulo {
+		font-size: 45px;
+		padding-bottom: 15px;
+		text-align:center;
+		padding-top: 15px;
+		color:#FFF;
+	}
+	
+	p {
+		margin: 50px 40px 40px 40px;
+		font-family:"Lucida Sans Unicode";
+		font-size:18px;
+		color: #ffF;
+		}
+	
+	.barra .hr {
+		background-color: #FFF;
+		height: 5px;
+		margin: 0 auto;
+		width: 33%;
+	}
+	
+
+.cyber{
+  height: 600px;
+  justify-content: center;
+  background-color: #0E8FED;
+}
+ 
+ .t{
+  height: 600px;
+  justify-content: center;
+  background-color: #0D70D4;
+}
+.v{
+  height: 600px;
+  justify-content: center;
+  background-color: #08437F;
+}
+		footer{
+			width:100%;
+			height:400px;
+			background: #202020;
+			padding: 30px 0;
+			border-top: 10px solid #151515;
+			
+			}
+			
+			footer h4{
+				margin: 0;
+				color: #bbb;
+				text-transform:uppercase;
+				font-size: 15px;
+				}
+				
+				footer ul{
+					float: left;
+					width: 20%;
+					list-style-type: none;
+					
+					}
+					
+					footer li{
+						color:#aaa;
+						width: 80%;
+						margin: 20px 0;
+						font-size: 14px;
+						line-height: 1.6 em;
+						}
+						
+						footer li.tw{
+							padding-left: 20px;
+							background:url(icones/facebook.png)no-repeat left 1px;
+							
+							}
+							footer li.tw a{
+								text-decoration:none;
+								color:#bbb;
+								}
+							footer li.mp{
+							padding-left: 20px;
+							background:url(icones/mapas.png)no-repeat left 1px;
+							}
+							footer li.tl{
+							padding-left: 20px;
+							background:url(icones/telefone.png)no-repeat left 2px;
+							}
+							footer li.em{
+							padding-left: 20px;
+							background:url(icones/email.png)no-repeat left 1px;
+							}
+							footer li.tw:hover{
+								transform:scale(1.08);
+								cursor:pointer;
+							}
+							
+	
+					#copyright{
+								clear:both;
+								padding-top: 30px;
+								margin-top: 30px;
+								float:left;
+								width: 100%;
+								border-top: 2px solid #333;
+								color: #999;
+								font-size:14px;
+								
+								}
+								@media screen and (max-width:1110px){
+									.theus{
+  height: 1000px;
+  justify-content: center;
+  background-color: #349EED;
+}
+.cyber{
+  height: 800px;
+  justify-content: center;
+  background-color: #0E8FED;
+}
+ 
+ .t{
+  height: 800px;
+  justify-content: center;
+  background-color: #0D70D4;
+}
+.v{
+  height: 1000px;
+  justify-content: center;
+  background-color: #08437F;
+}
+								}
+
+@media screen and (max-width:960px){
+	/*Header estilo*/
+	header label{
+		display:block;
+		}
+		#menu{
+			/*tamanho, cor e posição Barra Lateral*/
+			position:absolute;
+			background-color:rgb(97, 98, 97);
+			/*tamanho barra lateral*/
+			width: 20%;
+			height: 160px;
+			margin-left: -70%;
+			/*tempo de transição da barra*/
+			transition:all 0.5s;
+			}
+			/*Definindo li central, ou seja, barra central como  barra lateral*/
+					#menu ul{
+					flex-direction: column;
+					margin:0%;
+					}
+				/*cor do traçado embaixo dos topicos que são links diretos*/
+					#menu li{
+					text-align:left;
+					float: left;
+					font-family: Trebuchet MS;
+					}
+					header label:hover{
+					cursor:pointer;
+					}
+					#menu li:hover{
+						text-shadow: none;
+					transform:scale(1);
+					background: rgba(0,0,0,0.3);
+					}
+					#menu li a{
+                    text-align:left;
+					}
+					#btn-menu:checked ~ #menu{
+						margin: 0;
+						}
+						
+						
+						
+						.barra .hr {
+		background-color: #FFF;
+		height: 5px;
+		margin: 0 auto;
+		width: 37%;
+	}
+	
+.theus{
+  height: 900px;
+  justify-content: center;
+  background-color: #349EED;
+}
+.cyber{
+  height: 800px;
+  justify-content: center;
+  background-color: #0E8FED;
+}
+ 
+ .t{
+  height: 800px;
+  justify-content: center;
+  background-color: #0D70D4;
+}
+.v{
+  height: 900px;
+  justify-content: center;
+  background-color: #08437F;
+}
+
+						footer ul{
+		width: 50%;
+		}
+		
+	 footer ul: nth-child(odd){
+		 clear:both;
+	 }
+	 footer{
+			width:100%;
+			height: 950px;
+			background: #202020;
+			padding: 30px 0;
+			border-top: 10px solid #151515;
+			
+			}
+			 
+       
+	
+}
+						@media (max-width:768px){
+	/*Header estilo*/
+	header label{
+		display:block;
+		}
+		header label:hover{
+	cursor:pointer;
+}
+					#menu li:hover{
+					transform:scale(1);	
+					}
+		#menu{
+			/*tamanho, cor e posição Barra Lateral*/
+			position:absolute;
+			background-color:rgb(0, 0, 0);
+			/*tamanho barra lateral*/
+			width: 40%;
+			margin-left: -70%;
+			/*tempo de transição da barra*/
+			transition:all 0.5s;
+			}
+			/*Definindo li central, ou seja, barra central como  barra lateral*/
+			#menu ul{
+				flex-direction: column;
+				margin:0%;
+				}
+				/*cor do traçado embaixo dos topicos que são links diretos*/
+				#menu li{
+					text-align:left;
+					float: left;
+					font-family: Trebuchet MS;
+					}
+					#menu li a{
+                    text-align:left;
+					}
+					#btn-menu:checked ~ #menu{
+						margin: 0;
+						}
+											.barra .hr {
+		background-color: #FFF;
+		height: 5px;
+		margin: 0 auto;
+		width: 37%;
+	}
+	
+.theus{
+  height: 1000px;
+  justify-content: center;
+  background-color: #349EED;
+}
+.cyber{
+  height: 800px;
+  justify-content: center;
+  background-color: #0E8FED;
+}
+ 
+ .t{
+  height: 800px;
+  justify-content: center;
+  background-color: #0D70D4;
+}
+.v{
+  height: 1000px;
+  justify-content: center;
+  background-color: #08437F;
+}
+						}
+@media screen and (max-width:480px){
+	header label:hover{
+	cursor:pointer;
+}
+					#menu li:hover{
+					transform:scale(1);	
+					}
+										.barra .hr {
+		background-color: #FFF;
+		height: 5px;
+		margin: 0 auto;
+		width: 37%;
+	}
+	
+.theus{
+  height: 1600px;
+  justify-content: center;
+  background-color: #349EED;
+}
+.cyber{
+  height: 1400px;
+  justify-content: center;
+  background-color: #0E8FED;
+}
+ 
+ .t{
+  height: 1200px;
+  justify-content: center;
+  background-color: #0D70D4;
+}
+.v{
+  height: 1600px;
+  justify-content: center;
+  background-color: #08437F;
+}
+					 footer ul{
+			 width: 100%;
+			 float:none;
+		 }
+	   
+}
+
+@media screen and (max-width:440px){
+	.theus{
+  height: 1900px;
+  justify-content: center;
+  background-color: #349EED;
+}
+.cyber{
+  height:1600px;
+  justify-content: center;
+  background-color: #0E8FED;
+}
+ 
+ .t{
+  height: 1500px;
+  justify-content: center;
+  background-color: #0D70D4;
+}
+.v{
+  height: 2200px;
+  justify-content: center;
+  background-color: #08437F;
+}
+	
+	
+	}
+	
+	@media screen and (max-width:360px){
+		.theus{
+  height: 2000px;
+  justify-content: center;
+  background-color: #349EED;
+}
+.cyber{
+  height: 1800px;
+  justify-content: center;
+  background-color: #0E8FED;
+}
+ 
+ .t{
+  height: 1800px;
+  justify-content: center;
+  background-color: #0D70D4;
+}
+.v{
+  height: 2200px;
+  justify-content: center;
+  background-color: #08437F;
+}
+		
+		}
+		@media screen and (max-width:280px){
+		.theus{
+  height: 3000px;
+  justify-content: center;
+  background-color: #349EED;
+}
+.cyber{
+  height: 3000px;
+  justify-content: center;
+  background-color: #0E8FED;
+}
+ 
+ .t{
+  height: 3000px;
+  justify-content: center;
+  background-color: #0D70D4;
+}
+			}
+	

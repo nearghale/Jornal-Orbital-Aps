@@ -1,0 +1,389 @@
+/* efeito dentro do corpo, definido fonte e tamanho da margin em 0. */
+body {
+margin: 0;
+font-family: Trebuchet MS;
+background:#f7f7f7;
+}
+/* denindo o header com tamanho 100 %, e a cor de fundo Azul, header fixo */
+header{
+	width:100%;
+	height: 50px;
+	min-height: 50px;
+    position: fixed;
+    top: 0;
+	background-color:rgb(0, 0, 0);
+}
+/* cancelando o checkbox, pois o mesmo foi usado na função do icon, assim deixei invisivel ao usuario */
+#btn-menu{
+	display: none;
+}
+/* definindo o icon , com tamanho de altura, largura e espaçamento */
+header label{
+	display: none;
+	width:40px;
+	height:20px;
+	padding:10px;
+}
+/* para quando passar o mouse */
+header label:hover{
+	cursor:pointer;
+}
+#menu ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	margin-left: 70%;
+}
+/*Definindo proporção de crescimento de cada elemento, se tiver flat-grow*/
+#menu li{
+	margin: 15px 0px 0px 15px;
+}
+
+/*efeito de mouse, quando passar o mouse muda de cor*/
+#menu li:hover{
+	text-shadow: 0 0 40px #00f6ff;
+	transform:scale(1.2);
+}
+
+
+#menu li a{
+	padding: 15px 10px;
+	color:#fff;
+	text-decoration:none;
+	font-size:18px;
+}
+
+.wrapper{
+	width: 96%;
+	max-width: 1200px;
+	margin : 0 auto;
+	padding : 0px 2%;
+}
+.wrapper a{
+	color:#bbb;
+
+	}
+.corpo {
+  height: 650px;
+ /* min-height: 100%;*/
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+
+}
+
+.corpo div {
+  padding: 40px;
+  font-size:45px;
+  color:#FFF;
+	overflow-y: hidden;
+}
+/*Cor letras*/
+p, li,h1, h2,h3,h4 {
+	/*color:#999;*/
+	}
+	/*selecionando barra2*/
+	#selling-points{
+		margin-top: 60px;
+		height:300px;
+		}
+		#selling-points li{
+			float:left;
+			width: 23%;
+			padding:1%;
+			text-align:center;
+		    list-style-type:none;
+			line-height: 1.6 em;
+
+		}
+		#selling-points: after{
+		display:block;
+		content:"";
+		clear: both;
+		}
+		#latest-work{
+		margin-top: 60px;
+		height:400px;
+		}
+		#latest-work h2{
+			text-transform:uppercase;
+			font-size: 20px;
+			margin-bottom: 40px;
+			text-align:right;
+		}
+
+		#latest-work li{
+			width: 32%;
+			float: left;
+			list-style-type: none;
+			}
+
+			#latest-work img{
+				width: 100%;
+				}
+
+				#latest-work li:nth-child(2){
+				margin: 0 2%
+				}
+				  #latest-work: after{
+			display:block;
+		content:"";
+		clear: both;
+
+			}
+
+			#latest-work h3{
+			margin-bottom: 30px;
+
+		}
+
+		p.tags{color:#000080; font-size: 14px; margin-top:6px;}
+		p.tag{color:#8B8682; font-size: 20px; margin-top:10px;}
+
+		#quote{
+			margin-top: 60px;
+			width: 60%;
+			padding: 40px 20%;
+			background-color: #efefef;
+			color: #000;
+			font-family: Georgia,serif;
+			font-style: italic;
+			font-size: 20px;
+			line-height: 1.6 em;
+			text-align:center;
+			}
+			#quote h4{
+				font-family:"Segoe UI Semibold", "Segoe UI", "Segoe UI Light", "Segoe Print";
+				}
+		footer{
+			width:100%;
+			height:400px;
+			background: #202020;
+			padding: 30px 0;
+			border-top: 10px solid #151515;
+
+			}
+
+			footer h4{
+				margin: 0;
+				color: #555;
+				text-transform:uppercase;
+				font-size: 15px;
+				}
+
+				footer ul{
+					float: left;
+					width: 20%;
+					list-style-type: none;
+
+					}
+
+					footer li{
+						color:#aaa;
+						width: 80%;
+						margin: 20px 0;
+						font-size: 14px;
+						line-height: 1.6 em;
+						}
+
+						footer li.tw{
+							padding-left: 20px;
+							background:url(icones/facebook.png)no-repeat left 1px;
+
+							}
+							footer li.tw a{
+								text-decoration:none;
+								}
+							footer li.mp{
+							padding-left: 20px;
+							background:url(icones/mapas.png)no-repeat left 1px;
+							}
+							footer li.tl{
+							padding-left: 20px;
+							background:url(icones/telefone.png)no-repeat left 2px;
+							}
+							footer li.em{
+							padding-left: 20px;
+							background:url(icones/email.png)no-repeat left 1px;
+							}
+							footer li.tw:hover{
+								transform:scale(1.08);
+								cursor:pointer;
+							}
+
+
+					#copyright{
+								clear:both;
+								padding-top: 30px;
+								margin-top: 30px;
+								float:left;
+								width: 100%;
+								border-top: 2px solid #333;
+								color: #999;
+								font-size:14px;
+
+								}
+
+@media screen and (max-width:960px){
+	/*Header estilo*/
+	header label{
+		display:block;
+		}
+		#menu{
+			/*tamanho, cor e posição Barra Lateral*/
+			position:absolute;
+			background-color:rgb(97, 98, 97);
+			/*tamanho barra lateral*/
+			width: 20%;
+			height: 160px;
+			margin-left: -70%;
+			/*tempo de transição da barra*/
+			transition:all 0.5s;
+			}
+			/*Definindo li central, ou seja, barra central como  barra lateral*/
+					#menu ul{
+					flex-direction: column;
+					margin:0%;
+					}
+				/*cor do traçado embaixo dos topicos que são links diretos*/
+					#menu li{
+					text-align:left;
+					float: left;
+					font-family: Trebuchet MS;
+					}
+					header label:hover{
+					cursor:pointer;
+					}
+					#menu li:hover{
+						text-shadow: none;
+					transform:scale(1);
+					background: rgba(0,0,0,0.3);
+					}
+					#menu li a{
+                    text-align:left;
+					}
+					#btn-menu:checked ~ #menu{
+						margin: 0;
+						}
+
+	#selling-points li{
+		width: 40%;
+		padding: 0 5%;
+		margin: 20px 0;
+
+	}
+	#latest-work li{
+			width: 60%;
+		    margin: 30px 20% !important;
+			}
+			#latest-work h2{
+				text-align: center;
+		}
+
+	footer ul{
+		width: 50%;
+		}
+
+	 footer ul: nth-child(odd){
+		 clear:both;
+	 }
+	 footer{
+			width:100%;
+			height: 950px;
+			background: #202020;
+			padding: 30px 0;
+			border-top: 10px solid #151515;
+
+			}
+	 #quote{
+		 padding: 40px 5%;
+		 margin-top: 1200px;
+		 width: 100%;
+		 }
+
+}
+
+@media (max-width:768px){
+	/*Header estilo*/
+	header label{
+		display:block;
+		}
+		header label:hover{
+	cursor:pointer;
+}
+					#menu li:hover{
+					transform:scale(1);
+					}
+		#menu{
+			/*tamanho, cor e posição Barra Lateral*/
+			position:absolute;
+			background-color:rgb(0, 0, 0);
+			/*tamanho barra lateral*/
+			width: 40%;
+			margin-left: -70%;
+			/*tempo de transição da barra*/
+			transition:all 0.5s;
+			}
+			/*Definindo li central, ou seja, barra central como  barra lateral*/
+			#menu ul{
+				flex-direction: column;
+				margin:0%;
+				}
+				/*cor do traçado embaixo dos topicos que são links diretos*/
+				#menu li{
+					text-align:left;
+					float: left;
+					font-family: Trebuchet MS;
+					}
+					#menu li a{
+                    text-align:left;
+					}
+					#btn-menu:checked ~ #menu{
+						margin: 0;
+						}
+
+}
+@media screen and (max-width:480px){
+	header label:hover{
+	cursor:pointer;
+}
+					#menu li:hover{
+					transform:scale(1);
+					}
+		#selling-points li{
+		width: 80%;
+		padding: 0 10%;
+		margin: 20px 0;
+
+	}
+	#latest-work{
+		height:500px;
+		}
+	#latest-work li{
+			width: 80%;
+		    margin: 30px 10% !important;
+			}
+			#latest-work h2{
+				text-align: center;
+		}
+
+		 #quote{
+		 margin-top: 10000px;
+	     font-size:16px;
+	     font-weight: bold;
+		 padding: 40px 5%;
+		 margin-top: 1800px;
+		 width: 90%;
+		 }
+
+		 footer ul{
+			 width: 100%;
+			 float:none;
+		 }
+
+
+}
